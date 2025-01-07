@@ -24,3 +24,15 @@ variable "keyname" {
   type        = string
   default     = "vProfile-opentofu"
 }
+
+variable "role_name" {
+  description = "The name of the IAM role"
+  type        = string
+  default     = "tomcat-s3-role"
+}
+
+variable "service" {
+  description = "The service that will assume the role"
+  type        = string
+  default     = "ec2"
+}
